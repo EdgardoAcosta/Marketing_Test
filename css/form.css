@@ -1,11 +1,9 @@
-
 html,
 body,
 header,
 .view {
     height: 100%;
 }
-
 /* Navigation*/
 
 .navbar {
@@ -21,11 +19,10 @@ header,
         background-color: #0A6A60;
     }
 }
-
 /*Intro*/
 
 .view {
-    background: url("http://www.pptgrounds.com/wp-content/uploads/2012/08/Abstract-Blurry-Business-PPT-Backgrounds-1000x750.jpg") no-repeat center center fixed;
+    background: url("http://mdbootstrap.com/images/regular/city/img%20(25).jpg")no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -51,14 +48,12 @@ header,
         padding-top: 7rem;
         text-align: center;
     }
-
-    #app-mockup {
-        max-height: 400px;
-    }
 }
-
-/*Footer*/
-
 footer.page-footer {
     background-color: #2F968B;
+}
+#add_user {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
