@@ -4,11 +4,8 @@
  */
 
 
-function register_user(email) {
-}
-
 $(document).ready(function () {
-
+    //initializes variables for toastr
     toastr.options = {
         "closeButton": false,
         "debug": false,
@@ -27,7 +24,7 @@ $(document).ready(function () {
         "hideMethod": "fadeOut"
     }
 
-    console.log("Ready");
+    //Change card effect
     $(".pricing-card").mouseover(function () {
         $(this).addClass("card-overlay");
     });

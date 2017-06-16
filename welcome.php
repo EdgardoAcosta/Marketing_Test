@@ -1,15 +1,15 @@
 <!--
 /**
  * Created by EdgardoAcosta.
- * index.php
- * Landing page
+ * welcome.php
+ * Simple welcome pages
  */
 -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Required meta tags always come first -->
+    <!-- Meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -98,7 +98,7 @@
                                         <h3 class="h3-responsive">Welcome to Dropbox</h3>
                                         <p>Get the experience you deserve</p>
                                         <p><a class="btn btn-white-outline btn-lg wow fadeInLeft"
-                                              data-wow-delay="0.7s" href="index.php" >Learn more!</a>
+                                              data-wow-delay="0.7s" href="index.php"onclick="mixpanel.track('WELCOME TO HOME');" >Learn more!</a>
                                         </p>
                                     </div>
                                 </div>
@@ -120,7 +120,7 @@
                                         <h3 class="h3-responsive">Easy Access</h3>
                                         <p>Faster and safer to your data.</p>
                                         <p><a class="btn btn-white-outline btn-lg wow fadeInLeft"
-                                              data-wow-delay="0.7s" href="index.php" >Learn more!</a>
+                                              data-wow-delay="0.7s" href="index.php" onclick="mixpanel.track('WELCOME TO HOME');">Learn more!</a>
                                         </p>
                                     </div>
                                 </div>

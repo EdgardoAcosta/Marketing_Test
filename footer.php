@@ -2,6 +2,7 @@
 /**
  * User: Edgardo Acosta
  * Footer.php
+ * This file contains the footer for all pages
  */
 
 

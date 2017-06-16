@@ -5,7 +5,7 @@
  * Landing page
  */
 -->
-<?php  include 'header.php' ?>
+<?php /*Include header to page */ include 'header.php' ?>
 
 <!-- Index css -->
 <link href="css/index.css" rel="stylesheet">
@@ -380,16 +380,18 @@
 <!--/Main layout-->
 
 <script>
+    //Send email of input to form.php
     $('#to_form').click(function () {
-        mixpanel.track("Redirect to form");
         var email = $('#email_new_user').val();
         if (email == undefined || email == ""){
             toastr.warning("please enter a valid email");
         }
         else {
+            mixpanel.track("Redirect to form");
             window.location.href = "form.php?email="+email;
         }
     });
+    //Mixpanel tracking
     $('.nav-link').click(function () {
         var name = ($(this).attr("id")).toString();
         mixpanel.track(name.toUpperCase());
@@ -398,4 +400,5 @@
 
 </script>
 
-<?php include 'footer.php' ?>
+
+<?php /*Include footer to page */ include 'footer.php' ?>

@@ -3,12 +3,9 @@
  * form.js used in form.php
  */
 
-
-
-
-
+//On document ready
 $(document).ready(function () {
-
+    //initializes variables for toastr
     toastr.options = {
         "closeButton": false,
         "debug": false,
@@ -26,7 +23,7 @@ $(document).ready(function () {
         "showMethod": "fadeIn",
         "hideMethod": "fadeOut"
     }
-
+    //Send data to web service to add new user to de mailchimp list
     $('#add').submit(function (event) {
         event.preventDefault();
         var datos = {};
@@ -43,6 +40,7 @@ $(document).ready(function () {
         }, 'json').done(function (result) {
             console.log(result);
 
+            //If user addes succesfuly display messages
             if (result.success == '1') {
                 toastr.success(result.msg);
                 $('#add').reset();
@@ -51,6 +49,7 @@ $(document).ready(function () {
                 toastr.warning(result.msg);
             }
         }).fail(function (xhr) {
+            //Error in connection to web services
             toastr.error("Sorry something went wrong, try again");
             //console.log(xhr);
         });
