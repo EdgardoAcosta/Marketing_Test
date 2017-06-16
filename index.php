@@ -276,8 +276,9 @@
                                 </li>
                             </ul>
                             <br>
-                            <a class="btn btn-blue-grey btn-lg"> Free 30 days trail</a>
-                            <a class="btn btn-blue-grey btn-lg"> Buy now</a>
+                            <a class="btn btn-blue-grey btn-lg"
+                               onclick="mixpanel.track('STANDAR TRAIL');"> Free 30 days trail</a>
+                            <a class="btn btn-blue-grey btn-lg"  onclick="mixpanel.track('STANDAR BUY');"> Buy now</a>
                         </div>
                     </div>
                     <!--/.Card-->
@@ -315,8 +316,8 @@
                                         <p><strong>Business hours phone support</strong></p>
                                     </li>
                                 </ul>
-                                <a class="btn btn-blue-grey btn-lg"> Free 30 days trail</a>
-                                <a class="btn btn-blue-grey btn-lg"> Buy now</a>
+                                <a class="btn btn-blue-grey btn-lg"  onclick="mixpanel.track('ADVANCED TRAIL');"> Free 30 days trail</a>
+                                <a class="btn btn-blue-grey btn-lg"  onclick="mixpanel.track('ADVANCED BUY');"> Buy now</a>
                             </div>
                         </div>
 
@@ -358,7 +359,8 @@
                                     <p><strong>24/7 </strong> phone support</p>
                                 </li>
                             </ul>
-                            <a class="btn btn-blue-grey btn-lg" href="#">Contact us </a>
+                            <a class="btn btn-blue-grey btn-lg" href="form.php" onclick="mixpanel.track('ENTERPRISE');">
+                            Contact us </a>
                         </div>
 
                     </div>
@@ -372,212 +374,28 @@
         </section>
         <!--/Section: Pricing v.5-->
 
-        <hr class="between-sections">
-
-        <!--Section: Team v.5-->
-        <section class="section" id="our-team">
-
-            <!--Section heading-->
-            <h1 class="section-heading wow fadeIn" data-wow-delay="0.2s">Our amazing team</h1>
-            <!--Section description-->
-            <p class="section-description wow fadeIn" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam
-                voluptas nostrum quisquam eum porro a pariatur accusamus veniam. Quia, minima?</p>
-            <br>
-
-            <div class="row">
-
-                <!--First column-->
-                <div class="col-lg-4 col-md-6 wow fadeInLeft" data-wow-delay="0.4s">
-
-                    <!--Rotating card-->
-                    <div class="card-wrapper">
-                        <div id="card-1" class="card-rotating effect__click">
-
-                            <!--Front Side-->
-                            <div class="face front">
-
-                                <!-- Image-->
-                                <div class="card-up">
-                                    <img src="http://mdbootstrap.com/images/regular/nature/img%20(55).jpg">
-                                </div>
-                                <!--Avatar-->
-                                <div class="avatar"><img src="http://mdbootstrap.com/images/avatars/img%20(2).jpg"
-                                                         class="img-circle img-responsive">
-                                </div>
-                                <!--Content-->
-                                <div class="card-block">
-                                    <h4>Maria Kate</h4>
-                                    <p>Photographer</p>
-                                    <!--Triggering button-->
-                                    <a class="rotate-btn" data-card="card-1"><i class="fa fa-repeat"></i> Click here to
-                                        rotate</a>
-                                </div>
-                            </div>
-                            <!--/.Front Side-->
-
-                            <!--Back Side-->
-                            <div class="face back">
-
-                                <!--Content-->
-                                <h4>About me</h4>
-                                <hr>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quae, dolores dicta.
-                                    Blanditiis rem amet repellat, dolores nihil quae in mollitia asperiores ut rerum
-                                    repellendus, voluptatum eum, officia laudantium
-                                    quaerat?
-                                </p>
-                                <hr>
-                                <!--Social Icons-->
-                                <ul class="inline-ul">
-                                    <li><a class="icons-sm fb-ic"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a class="icons-sm pin-ic"><i class="fa fa-pinterest"> </i></a></li>
-                                    <li><a class="icons-sm ins-ic"><i class="fa fa-instagram"> </i></a></li>
-                                    <li><a class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a></li>
-                                </ul>
-                                <!--Triggering button-->
-                                <a class="rotate-btn" data-card="card-1"><i class="fa fa-undo"></i> Click here to rotate
-                                    back</a>
-
-                            </div>
-                            <!--/.Back Side-->
-
-                        </div>
-                    </div>
-                    <!--/.Rotating card-->
-                </div>
-                <!--/First column-->
-
-
-                <!--Second column-->
-                <div class="col-lg-4 col-md-6 wow fadeInLeft" data-wow-delay="0.3s">
-
-                    <!--Rotating card-->
-                    <div class="card-wrapper">
-                        <div id="card-2" class="card-rotating effect__click">
-
-                            <!--Front Side-->
-                            <div class="face front">
-
-                                <!-- Image-->
-                                <div class="card-up">
-                                    <img src="http://mdbootstrap.com/images/regular/nature/img%20(64).jpg">
-                                </div>
-                                <!--Avatar-->
-                                <div class="avatar"><img src="http://mdbootstrap.com/images/avatars/img%20(1).jpg"
-                                                         class="img-circle img-responsive">
-                                </div>
-                                <!--Content-->
-                                <div class="card-block">
-                                    <h4>Anna Deynah</h4>
-                                    <p>Web Designer</p>
-                                    <!--Triggering button-->
-                                    <a class="rotate-btn" data-card="card-2"><i class="fa fa-repeat"></i> Click here to
-                                        rotate</a>
-                                </div>
-                            </div>
-                            <!--/.Front Side-->
-
-                            <!--Back Side-->
-                            <div class="face back">
-
-                                <!--Content-->
-                                <h4>About me</h4>
-                                <hr>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quae, dolores dicta.
-                                    Blanditiis rem amet repellat, dolores nihil quae in mollitia asperiores ut rerum
-                                    repellendus, voluptatum eum, officia laudantium
-                                    quaerat?
-                                </p>
-                                <hr>
-                                <!--Social Icons-->
-                                <ul class="inline-ul">
-                                    <li><a class="icons-sm fb-ic"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a class="icons-sm tw-ic"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a class="icons-sm gplus-ic"><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a class="icons-sm drib-ic"><i class="fa fa-dribbble"> </i></a></li>
-                                </ul>
-                                <!--Triggering button-->
-                                <a class="rotate-btn" data-card="card-2"><i class="fa fa-undo"></i> Click here to rotate
-                                    back</a>
-
-                            </div>
-                            <!--/.Back Side-->
-
-                        </div>
-                    </div>
-                    <!--/.Rotating card-->
-                </div>
-                <!--/Second column-->
-
-
-                <!--Third column-->
-                <div class="col-lg-4 col-md-6 wow fadeInLeft" data-wow-delay="0.2s">
-
-                    <!--Rotating card-->
-                    <div class="card-wrapper">
-                        <div id="card-3" class="card-rotating effect__click">
-
-                            <!--Front Side-->
-                            <div class="face front">
-
-                                <!-- Image-->
-                                <div class="card-up">
-                                    <img src="http://mdbootstrap.com/images/regular/nature/img%20(68).jpg">
-                                </div>
-                                <!--Avatar-->
-                                <div class="avatar"><img src="http://mdbootstrap.com/images/avatars/img%20(5).jpg"
-                                                         class="img-circle img-responsive">
-                                </div>
-                                <!--Content-->
-                                <div class="card-block">
-                                    <h4>Sarah Melyah</h4>
-                                    <p>Front-end Developer</p>
-                                    <!--Triggering button-->
-                                    <a class="rotate-btn" data-card="card-3"><i class="fa fa-repeat"></i> Click here to
-                                        rotate</a>
-                                </div>
-                            </div>
-                            <!--/.Front Side-->
-
-                            <!--Back Side-->
-                            <div class="face back">
-
-                                <!--Content-->
-                                <h4>About me</h4>
-                                <hr>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quae, dolores dicta.
-                                    Blanditiis rem amet repellat, dolores nihil quae in mollitia asperiores ut rerum
-                                    repellendus, voluptatum eum, officia laudantium
-                                    quaerat?
-                                </p>
-                                <hr>
-                                <!--Social Icons-->
-                                <ul class="inline-ul">
-                                    <li><a class="icons-sm gplus-ic"><i class="fa fa-google-plus"> </i></a></li>
-                                    <li><a class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a></li>
-                                    <li><a class="icons-sm git-ic"><i class="fa fa-github"> </i></a></li>
-                                    <li><a class="icons-sm li-ic"><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
-                                <!--Triggering button-->
-                                <a class="rotate-btn" data-card="card-3"><i class="fa fa-undo"></i> Click here to rotate
-                                    back</a>
-
-                            </div>
-                            <!--/.Back Side-->
-
-                        </div>
-                    </div>
-                    <!--/.Rotating card-->
-                </div>
-                <!--/Third column-->
-            </div>
-
-        </section>
-        <!--/Section: Team v.5-->
 
     </div>
 </main>
 <!--/Main layout-->
+
+<script>
+    $('#to_form').click(function () {
+        mixpanel.track("Redirect to form");
+        var email = $('#email_new_user').val();
+        if (email == undefined || email == ""){
+            toastr.warning("please enter a valid email");
+        }
+        else {
+            window.location.href = "form.php?email="+email;
+        }
+    });
+    $('.nav-link').click(function () {
+        var name = ($(this).attr("id")).toString();
+        mixpanel.track(name.toUpperCase());
+    });
+
+
+</script>
 
 <?php include 'footer.php' ?>

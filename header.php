@@ -27,9 +27,16 @@ echo '
 
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
+    
+    <!--MixPanel-->
 
-   
-</head>
+   <!-- start Mixpanel -->
+   <script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
+    0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+    for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
+    mixpanel.init("6ab14a67c6c517fc224b439ad9cbbf56");</script>
+    <!-- end Mixpanel -->
+    </head>
 
 <body>
 
@@ -51,19 +58,22 @@ echo '
                 <!--Links-->
                 <ul class="nav navbar-nav smooth-scroll">
                     <li class="nav-item">
-                        <a class="nav-link"  onclick="location.href = \'index.php\';">Home <span class="sr-only">(current)</span></a>
+                        <a id="home" class="nav-link"  onclick="location.href = \'index.php\';">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#best-features">Features</a>
+                        <a id="features" class="nav-link" href="#best-features">Features</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                        <a id="testimonial" class="nav-link" href="#testimonials">Testimonials</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#pricing">Pricing</a>
+                        <a id="pricing" class="nav-link" href="#pricing">Pricing</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" onclick="location.href = \'form.php\';">Contact</a>
+                        <a id="form" class="nav-link" onclick="location.href = \'form.php\';">Contact</a>
+                    </li>
+                     <li class="nav-item">
+                        <a id="welcome" class="nav-link" onclick="location.href = \'welcome.php\';">Welcome</a>
                     </li>
                 </ul>
 
@@ -99,11 +109,23 @@ echo '
                         <div class="description">
                             <h2 class="h2-responsive wow fadeInLeft">Welcome to the solution of your problems </h2>
                             <hr class="hr-dark">
-                            <p class="wow fadeInLeft" data-wow-delay="0.4s">Dropbox Bussines Lorem ipsum dolor sit amet,
-                                consectetur adipiscing elit. Aenean at laoreet tellus. Curabitur posuere blandit massa.
-                                .</p>
+                            <p class="wow fadeInLeft" data-wow-delay="0.3s">Register to Dropbox Bussines and get the experience you 
+                            deserve.</p>
+                                <br>
+                               <p>
+                               <form>
+                                   <fieldset class="form-group">
+                                       <div class="md-form wow fadeInLeft" data-wow-delay="0.3s">
+                                            <i class="fa fa-envelope prefix"></i>
+                                            <input type="email" id="email_new_user" class="form-control" name="email">
+                                            <label>Your email</label>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                                </p> 
                             <br>
-                            <a class="btn btn-white-outline btn-lg wow fadeInLeft" data-wow-delay="0.7s">Learn more</a>
+                            
+                            <a class="btn btn-white-outline btn-lg wow fadeInLeft" data-wow-delay="0.7s" id="to_form">Register</a>
 
                         </div>
                     </div>

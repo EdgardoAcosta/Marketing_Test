@@ -91,6 +91,9 @@ echo '
 
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
+    
+    <!-- Google Analytics-->
+    <script type="text/javascript" src="js/analyticstracking.js"></script>
 
     <script>
         new WOW().init();
